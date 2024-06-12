@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Electrician Connect</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="directory.html">Electrician Directory</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+     
+
+        <section id="intro">
+            <h2>Connecting You with the Best Electricians</h2>
+            <input type="text" id="search-bar" placeholder="Search for electricians...">
+            <button onclick="searchElectricians()">Search</button>
+        </section>
+
+        <section id="featured-electricians">
+            <h2>Featured Electricians</h2>
+            <div id="electrician-list"></div>
+        </section>
+
+        <section id="registration">
+            <h2>Register as an Electrician or Customer</h2>
+            <div id="electrician-registration">
+                <h3>Electrician Registration</h3>
+                <form id="electrician-registration-form">
+                    <label for="electrician-name">Name:</label>
+                    <input type="text" id="electrician-name" name="electrician-name"><br>
+                    <label for="electrician-email">Email:</label>
+                    <input type="email" id="electrician-email" name="electrician-email"><br>
+                    <label for="electrician-qualifications">Qualifications:</label>
+                    <input type="text" id="electrician-qualifications" name="electrician-qualifications"><br>
+                    <label for="electrician-password">Password:</label>
+                    <input type="password" id="electrician-password" name="electrician-password"><br>
+                    <button type="submit">Register as Electrician</button>
+                </form>
+            </div>
+            <div id="customer-registration">
+                <h3>Customer Registration</h3>
+                <form id="customer-registration-form">
+                    <label for="customer-name">Name:</label>
+                    <input type="text" id="customer-name" name="customer-name"><br>
+                    <label for="customer-email">Email:</label>
+                    <input type="email" id="customer-email" name="customer-email"><br>
+                    <label for="customer-password">Password:</label>
+                    <input type="password" id="customer-password" name="customer-password"><br>
+                    <button type="submit">Register as Customer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
