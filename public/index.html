@@ -10,10 +10,14 @@
     <header>
         <h1>Electrician Connect</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="directory.html">Electrician Directory</a>
-            <a href="contact.html">Contact Us</a>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="directory.html">Electrician Directory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+           
         </nav>
     </header>
 
@@ -23,7 +27,8 @@
         <section id="intro">
             <h2>Connecting You with the Best Electricians</h2>
             <input type="text" id="search-bar" placeholder="Search for electricians...">
-            <button onclick="searchElectricians()">Search</button>
+        <button id="search-button">Search</button>
+
         </section>
 
         <section id="featured-electricians">
@@ -32,19 +37,19 @@
         </section>
 
         <section id="registration">
-            <h2>Register as an Electrician or Customer</h2>
-            <div id="electrician-registration">
-                <h3>Electrician Registration</h3>
+                 <div id="electrician-registration">
+               
                 <form id="electrician-registration-form">
-                    <label for="electrician-name">Name:</label>
-                    <input type="text" id="electrician-name" name="electrician-name"><br>
-                    <label for="electrician-email">Email:</label>
-                    <input type="email" id="electrician-email" name="electrician-email"><br>
-                    <label for="electrician-qualifications">Qualifications:</label>
-                    <input type="text" id="electrician-qualifications" name="electrician-qualifications"><br>
-                    <label for="electrician-password">Password:</label>
-                    <input type="password" id="electrician-password" name="electrician-password"><br>
-                    <button type="submit">Register as Electrician</button>
+                    <h3 class="title">Electrician Registration</h3>
+                    <input placeholder="Enter Name"  class="input" type="text" id="electrician-name" name="electrician-name"><br>
+                    <input class="input" placeholder="Enter email" type="email" id="electrician-email" name="electrician-email"><br>
+                    <input class="input" placeholder="Choose a Photo" type="file" id="electrician_photo" name="photo">
+                    <input  class="input" placeholder="Enter Qualifications" type="text" id="electrician-qualifications" name="electrician-qualifications"><br>
+                    <input class="input" type="text" placeholder="Enter Services Offered" id="electrician_services_offered" name="services_offered" required>
+                    <input class="input" placeholder="Location" type="text" id="electrician_location" name="location" required>
+                    <input class="input" placeholder="Password" type="password" id="electrician-password" name="electrician-password"><br>
+                    
+                    <button class="submit" type="submit">Register as Electrician</button>
                 </form>
             </div>
             <div id="customer-registration">
